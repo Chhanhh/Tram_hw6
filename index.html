@@ -1,0 +1,233 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tram_hw6</h1>
+    <h1>CSULB IS Courses</h1>
+    <p>Fall Classes Taken:</p>
+    <ul>
+        <li>IS 300</li>
+        <li>IS 310</li>
+        <li>IS 340</li>
+        <li>IS 385</li>
+    </ul>
+    <p>Spring Classes Taken:</p>
+    <ul>
+        <li>IS 301</li>
+        <li>IS 320</li>
+        <li>IS 380</li>
+        <li>IS 445</li>
+    </ul>
+
+
+    <script const bodyNodes = () => {
+
+        var nodes = document.body.childNodes; // this will get the array of all the nodes of the body tag
+        
+        nodes.forEach((node) => {
+        
+        console.log(node); // this will print the node
+        
+        });
+        
+        }
+        
+        bodyNodes();</script>
+   
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSULB IS Courses</h1>
+    <p>Fall Classes Taken:</p>
+    <ul class="iscourses" id="fall">
+        <li class="300level">IS 300</li>
+        <li class="300level">IS 310</li>
+        <li class="300level">IS 340</li>
+        <li class="300level">IS 385</li>
+    </ul>
+    <p>Spring Classes Taken:</p>
+    <ul class="iscourses" id="spring">
+        <li class="300level">IS 320</li>
+        <li class="300level">IS 380</li>
+        <li class="400level">IS 445</li>
+        <li class="400level">IS 480</li>
+    </ul>
+    <h2>Links</h2>
+    <ul id="links">
+        <li id="csulb"><a href="http://www.csulb.edu">CSULB Home Page</a></li>
+        <li id="is"><a href="https://www.csulb.edu/college-of-business/information-systems">Information Systems</a></li>
+    </ul>
+    <script const bodyNodes = () => {
+
+        var nodes = document.body.childNodes; // this will get the array of all the nodes of the body tag
+        
+        nodes.forEach((node) => {
+        
+        console.log(node); // this will print the node
+        
+        });
+        
+        }
+        
+        bodyNodes();</script>
+    <h2><a href="../index.html"></a>Link to homepage</h2>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSULB IS Courses</h1>
+    <b><p style="background-color:yellow;">
+        Fall Classes Taken:</p></b>
+    <ul class="iscourses" id="fall">
+        <li class="300level">IS 300</li>
+        <li class="300level">IS 310</li>
+        <li class="300level">IS 340</li>
+        <li class="300level">IS 385</li>
+    </ul>
+    <b><p style="background-color:yellow;">
+        Spring Classes Taken:</p></b>
+    <ul class="iscourses" id="spring">
+        <li class="300level">IS 320</li>
+        <li class="300level">IS 380</li>
+        <li class="400level">IS 445</li>
+        <li class="400level">IS 480</li>
+    </ul>
+    <h2>Links</h2>
+    <ul id="links">
+        <li id="csulb"><a href="http://www.csulb.edu">CSULB Home Page</a></li>
+        <li id="is"><a href="https://www.csulb.edu/college-of-business/information-systems">Information Systems</a></li>
+    </ul>
+    <script src="../js/ex2.js"></script>
+    <h2><a href="../index.html">Link to homepage</a></h2>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CSULB IS Courses</h1>
+    <p>Fall Classes Taken:</p>
+    <ul class="iscourses" id="fall">
+        <li class="300level">IS 300</li>
+        <li class="300level">IS 310</li>
+        <li class="300level">IS 340</li>
+        <li class="300level">IS 385</li>
+    </ul>
+    <p>Spring Classes Taken:</p>
+    <ul class="iscourses" id="spring">
+        <li class="300level">IS 320</li>
+        <li class="300level">IS 380</li>
+        <li class="400level">IS 445</li>
+        <li class="400level">IS 480</li>
+    </ul>
+    <h2>Links</h2>
+    <ul id="links">
+        <li id="csulb"><a href="http://www.csulb.edu">CSULB Home Page</a></li>
+        <li id="cob"><a href="https://www.csulb.edu/college-of-business">College of Business</a></li>
+        <li id="is"><a href="https://www.csulb.edu/college-of-business/information-systems">Information Systems</a></li>
+    </ul>
+    <script src="../js/ex2.js"></script>
+    <h2><a href="../index.html">Link to homepage</a></h2>
+
+</body>
+</html>
+
+<h2>Number Table</h2>
+<div id="output">
+
+</div>
+
+<script>
+for(var i=0;i<12;i++){//a loop to create 12 elements
+var output = document.getElementById("output");
+var tr = document.createElement("tr");//create row
+var td = document.createElement("td");//create column
+td.innerText=i+1;//put value
+tr.appendChild(td);//append column to row
+output.appendChild(tr);//append row to main element
+if((i+1)%4==0){//if element number is divisible by 4 
+
+    td.classList.add("four")//then add it to the class
+}
+
+}
+
+</script>
+<style>
+    td{
+	border:1px solid black;
+    text-align: center;
+}
+.four{
+    background-color: skyblue;
+}
+
+</style>
+<h2><a href="../index.html">Link to homepage</a></h2>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A mini-dictionary</h3>
+<div id="content"></div>
+
+<script>
+ const words = [{
+ term: "Procrastination",
+ definition: "Avoidance of doing a task that needs to be accomplished"
+ }, {
+ term: "Tautology",
+ definition: "logical argument constructed in such a way that it is logically irrefutable"
+ }, {
+ term: "Oxymoron",
+ definition: "figure of speech that juxtaposes elements that appear to be contradictory"
+ }];
+var x ="<dl>", i; //initialize the var x with <dl> tag (description list)
+for (i=0; i<words.length; i++) { //for every term and definition in words
+  x = x+"<strong><dt>"+words[i]["term"]+"</strong></dt>"+"<dd>"+words[i]["definition"]+"</dd>";  //term should be strong and description term (<dt>); use dd for description
+}
+x=x+"</dl>"; //add the close tag of <dl>
+document.getElementById("content").innerHTML = x;
+</script>
+<h2><a href="../index.html"></a>Link to homepage</h2>
+</body>
+</html>
+
+<h3>Sum of two Integers</h3>
+<div id="content"></div>
+
+<script>
+    var a = prompt("Enter first number","");
+    var b = prompt("Enter second number","");
+    a=Number(a);
+    b=Number(b);
+    alert(a+b);
+    document.getElementById("content").innerHTML = (a) + (b);
+</script>
+<h2><a href="../index.html"></a>Link to homepage</h2>
+<style>
+    a {
+	border:1px solid black;}
+    
